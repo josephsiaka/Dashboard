@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Dashboard</title>
+    <link rel="stylesheet" href="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,
+    500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" 
+    rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="grid.css">
+</head>
+<body>
+    
+    <!-- Start of Side Bar -->
+    <div class="sidebar">
+        <div class="sidebar-logo">
+            <img src="../images/facebook.png" alt="facebook">
+            <div class="sidebar-close" id="sidebar-close">
+                <i class="bx bx-left-arrow-alt"></i>
+            </div>
+        </div>
+        <div class="sidebar-user">
+            <div class="sidebar-user-info">
+                <img src="../images/img1.jpg" alt="user-picture" class="profile-image">
+                <div class="sidebar-user-name">
+                    Stores and Stores
+                </div>
+                <button class="btn btn-outline">
+                    <i class="bx bx-log-out bx-flip-horizontal"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Side Bar Menu -->
+        <ul class="sidebar-menu">
+            <li>
+                <a href="#" class="active">
+                    <i class="bx bx-home"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-shopping-bag"></i>
+                    <span>Sales</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-chart"></i>
+                    <span>Analytics</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bx bx-user-circle"></i>
+                    <span>Account</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#">
+                            Edit Profile
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Account Settings
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Billing
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bx bx-user-circle"></i>
+                    <span>Project</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#">
+                            List
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Add Projets
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bx bx-user-circle"></i>
+                    <span>E-Commerce</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#">
+                            List Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Add Products
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Orders
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-mail-send"></i>
+                    <span>Mail</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-chat"></i>
+                    <span>Chat</span>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bx bx-calendar"></i>
+                    <span>Calendar</span>
+                </a>
+            </li>
+            <li class="sidebar-submenu">
+                <a href="#" class="sidebar-menu-dropdown">
+                    <i class="bx bx-cog"></i>
+                    <span>Settings</span>
+                    <div class="dropdown-icon"></div>
+                </a>
+                <ul class="sidebar-menu sidebar-menu-dropdown-content">
+                    <li>
+                        <a href="#" class="darkmode-toggle" id="darkmode-toggle">
+                            <i class='bx bxs-moon'></i>
+                            Darkmode
+                            <span class="darkmode-switch"></span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <!-- End of Side Bar Menu -->
+
+    </div>
+    <!-- End of Side Bar -->
+
+
+    <!-- Start of Main Content -->
+    <div class="main">
+        <div class="main-header">
+            <div class="mobile-toggle" id="mobile-toggle">
+                <i class="bx bx-menu-alt-right"></i>
+            </div>
+            <div class="main-title">
+                Dashboard
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="row">
+                <!-- col start -->
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <!-- COUNTER -->
+                        <div class="counter">
+                            <div class="counter-title">
+                                Total Order
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    6578
+                                </div>
+                                <i class="bx bx-shopping-bag"></i>
+                            </div>
+                        </div>
+                        <!-- END OF COUNTER -->
+                    </div>
+                </div>
+                <!-- col end -->
+                <!-- col start -->
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <!-- COUNTER -->
+                        <div class="counter">
+                            <div class="counter-title">
+                                Total Profit
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    $500k
+                                </div>
+                                <i class="bx bx-line-chart"></i>
+                            </div>
+                        </div>
+                        <!-- END OF COUNTER -->
+                    </div>
+                </div>
+                <!-- col end -->
+                <!-- col start -->
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <!-- COUNTER -->
+                        <div class="counter">
+                            <div class="counter-title">
+                                Daily Visitors
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    521
+                                </div>
+                                <i class="bx bx-user"></i>
+                            </div>
+                        </div>
+                        <!-- END OF COUNTER -->
+                    </div>
+                </div>
+                <!-- col end -->
+                <!-- col start -->
+                <div class="col-3 col-md-6 col-sm-12">
+                    <div class="box box-hover">
+                        <!-- COUNTER -->
+                        <div class="counter">
+                            <div class="counter-title">
+                                Conversion Rate
+                            </div>
+                            <div class="counter-info">
+                                <div class="counter-count">
+                                    30.2%
+                                </div>
+                                <i class="bx bx-chat"></i>
+                            </div>
+                        </div>
+                        <!-- END OF COUNTER -->
+                    </div>
+                </div>
+                <!-- col end -->
+            </div>
+        
+
+            <div class="row">
+                <!-- col start -->
+                <div class="col-3 col-md-6 col-sm-12">
+
+                    <!-- Top Product -->
+                    <div class="box f-height">
+                        <div class="box-header">
+                            Top Product
+                        </div>
+                        <div class="box-body">
+                            <ul class="product-list">
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="../images/guns12.jpg" alt="product image">
+                                        <div class="item-name">
+                                            <div class="product-name">Guns</div>
+                                            <div class="text-second">Clothes</div>
+                                        </div>
+                                        <div class="item-sale-info">
+                                            <div class="text-second">Sales</div>
+                                            <div class="product-sales">$7,000</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="../images/guns11.jpg" alt="product image">
+                                        <div class="item-name">
+                                            <div class="product-name">Guns</div>
+                                            <div class="text-second">Devices</div>
+                                        </div>
+                                        <div class="item-sale-info">
+                                            <div class="text-second">Sales</div>
+                                            <div class="product-sales">$7,000</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="../images/guns14.jpg" alt="product image">
+                                        <div class="item-name">
+                                            <div class="product-name">Guns</div>
+                                            <div class="text-second">Bags</div>
+                                        </div>
+                                        <div class="item-sale-info">
+                                            <div class="text-second">Sales</div>
+                                            <div class="product-sales">$7,000</div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="product-list-item">
+                                    <div class="item-info">
+                                        <img src="../images/guns14.jpg" alt="product image">
+                                        <div class="item-name">
+                                            <div class="product-name">Guns</div>
+                                            <div class="text-second">Assault</div>
+                                        </div>
+                                        <div class="item-sale-info">
+                                            <div class="text-second">Sales</div>
+                                            <div class="product-sales">$7,000</div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- End of Top Product -->
+
+                </div>
+                <!-- col end -->
+                <!-- col start -->
+                <div class="col-4 col-md-6 col-sm-12">
+
+                    <!-- Category Chart -->
+                     <div class="box f-height">
+                         <div class="box-body">
+                             <div id="category-chart"></div>
+                         </div>
+                     </div>
+                    <!--  End Category Chart -->
+
+                </div>
+                <!-- col end -->
+                <!-- col start -->
+                <div class="col-5 col-md-12 col-sm-12">
+
+                    <!-- Customers Chart -->
+                     <div class="box f-height">
+                         <div class="box-header">
+                             Customers
+                         </div>
+                         <div class="box-body">
+                             <div id="customer-chart"></div>
+                         </div>
+                     </div>
+                    <!--  End Customers Chart -->
+
+                </div>
+                <!-- col end -->
+                <div class="col-12">
+                    <!-- Order Table -->
+                    <div class="box">
+                        <div class="box-header">
+                            Recent Orders
+                        </div>
+                        <div class="box-body overflow-scroll">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Customer</th>
+                                        <th>Date</th>
+                                        <th>Order Status</th>
+                                        <th>Payment Status</th>
+                                        <th>Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>#01</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="../images/img1.jpg" alt="user image">
+                                                <span>ILIYA IKASI EPHRAIM</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-06-03</td>
+                                        <td>
+                                            <span class="order-status order-ready">
+                                                Ready
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-pending">
+                                                <div class="dot"></div>
+                                                <span>Pending</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#02</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="../images/img1.jpg" alt="user image">
+                                                <span>Henry Ochie</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-06-03</td>
+                                        <td>
+                                            <span class="order-status order-shipped">
+                                                Shipped
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Paid</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#03</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="../images/img1.jpg" alt="user image">
+                                                <span>John Doe</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-06-03</td>
+                                        <td>
+                                            <span class="order-status order-ready">
+                                                Ready
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-pending">
+                                                <div class="dot"></div>
+                                                <span>Pending</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#04</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="../images/img1.jpg" alt="user image">
+                                                <span>Maryam Gambo</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-06-03</td>
+                                        <td>
+                                            <span class="order-status order-shipped">
+                                                Shipped
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Paid</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#05</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="../images/img1.jpg" alt="user image">
+                                                <span>Okeke Samad</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-06-03</td>
+                                        <td>
+                                            <span class="order-status order-ready">
+                                                Ready
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-pending">
+                                                <div class="dot"></div>
+                                                <span>Pending</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#06</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="../images/img1.jpg" alt="user image">
+                                                <span>Mark Samuel</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-06-03</td>
+                                        <td>
+                                            <span class="order-status order-shipped">
+                                                Shipped
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Paid</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#07</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="../images/img1.jpg" alt="user image">
+                                                <span>Peter Simon</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-06-03</td>
+                                        <td>
+                                            <span class="order-status order-ready">
+                                                Ready
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-pending">
+                                                <div class="dot"></div>
+                                                <span>Pending</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr>
+                                    <tr>
+                                        <td>#08</td>
+                                        <td>
+                                            <div class="order-owner">
+                                                <img src="../images/img1.jpg" alt="user image">
+                                                <span>Jane Dan</span>
+                                            </div>
+                                        </td>
+                                        <td>2021-06-03</td>
+                                        <td>
+                                            <span class="order-status order-shipped">
+                                                Shipped
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <div class="payment-status payment-paid">
+                                                <div class="dot"></div>
+                                                <span>Paid</span>
+                                            </div>
+                                        </td>
+                                        <td>$123.45</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- End of Order Table -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End of Main Content -->
+
+    <div class="overlay"></div>
+
+
+
+    <!-- Javacript -->
+    <!-- Apex Chart -->
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    
+    <script src="./app.js"></script>
+</body>
+</html>
